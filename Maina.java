@@ -2,22 +2,22 @@ import java.util.Scanner;
 
 public class Maina {
     public static void main(String[] args) {
-        Scanner t = new Scanner(System.in);
-        int a, b;
+        Scanner teclado = new Scanner(System.in);
+        int numero1, numero2;
         boolean ep;
         System.out.print("Introduzca primer numero: ");
-        a = t.nextInt();
+        numero1 = teclado.nextInt();
         System.out.print("Introduzca segundo numero: ");
-        b = t.nextInt();
-        int ma, me;
-        if (a > b) {
-            ma = a;
-            me = b;
+        numero2 = teclado.nextInt();
+        int mayor, menor;
+        if (numero1 > numero2) {
+            mayor = numero1;
+            menor = numero2;
         } else {
-            ma = b;
-            me = a;
+            mayor = numero2;
+            menor = numero1;
         }
-        for (int i = me; i <= ma; i++) {
+        for (int i = menor; i <= mayor; i++) {
             ep = true;
             for (int j = 2; j < i; j++) {
                 if (i % j == 0) {
