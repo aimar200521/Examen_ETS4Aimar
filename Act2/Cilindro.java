@@ -1,8 +1,35 @@
 package Act2;
 
+/**
+ * Clase Cilindro.
+ */
 public class Cilindro {
-    double radio,altura,Ab,Al,At,Volumen;
+    /**
+     * Variable Radio
+     */
+    double radio, /**
+     * Variable Altura.
+     */
+    altura, /**
+     * Varible Altura Base.
+     */
+    Ab, /**
+     * Varible Altura lateral.
+     */
+    Al, /**
+     * Variable Altura total.
+     */
+    At, /**
+     * Variable Volumen.
+     */
+    Volumen;
 
+    /**
+     * El constructor
+     *
+     *
+     *
+     */
     public Cilindro(double radio, double altura, double ab, double at, double al, double volumen) {
         this.radio = radio;
         this.altura = altura;
@@ -12,6 +39,11 @@ public class Cilindro {
         Volumen = volumen;
     }
 
+    /**
+     * Getters y Setters
+     *
+     *
+     */
     public double getRadio() {
         return radio;
     }
@@ -60,19 +92,41 @@ public class Cilindro {
         Volumen = volumen;
     }
 
+    /**
+     * Calcular area altura double.
+     *
+     * @return the double
+     */
     public double calcularAreaAltura(){
         Al = 2*3.14*radio*altura;
     return Al;
     }
+
+    /**
+     * Calcular area base.
+     *
+     * @return area Base
+     */
     public double calcularAreaBase(){
         Ab = 3.14*(radio*radio);
         return Ab;
     }
+
+    /**
+     * Calcular areatotal.
+     *
+     * @return Area total
+     */
     public double calcularAreatotal(){
         At = 2*Ab+Al;
         return At;
     }
 
+    /**
+     * Calcular volumen.
+     *
+     * @return volumen
+     */
     public double calcularVolumen(){
         Volumen = 3.14*(radio*radio)*altura;
         return Volumen;
