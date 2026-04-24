@@ -61,21 +61,20 @@ public class Cilindro {
     }
 
     public double calcularAreaAltura(){
-        double Al = 2*3.14*radio*altura;
-        double Ab = 3.14*(radio*radio);
+        Al = 2*3.14*radio*altura;
     return Al;
     }
     public double calcularAreaBase(){
-        double Ab = 3.14*(radio*radio);
+        Ab = 3.14*(radio*radio);
         return Ab;
     }
     public double calcularAreatotal(){
-        double At = 2*Ab+Al;
+        At = 2*Ab+Al;
         return At;
     }
 
     public double calcularVolumen(){
-        double Volumen = 3.14*(radio*radio)*altura;
+        Volumen = 3.14*(radio*radio)*altura;
         return Volumen;
     }
 }
