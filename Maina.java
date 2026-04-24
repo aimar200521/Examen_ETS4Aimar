@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Clase Maina
- */
 public class Maina {
     /**
      * La clase pide dos numeros al usuario y deacubre cual es el mayor y el menor
